@@ -1,7 +1,7 @@
 import express from "express";
 import { isAdmin, requireSIgnIn } from "../middlewares/auth.js";
 import stripe from "stripe";(
-  "sk_test_51OKLAMSCLMZX95KzK1TmXD8x12KJTq3nKppprWOIULBejei37PUJMnGQEZrcwwtPwILXoCtTkQlhmpPec9fxhhWB00l9KCqB60"
+  Stripe_Secret_Key
 );
 
 import {
@@ -62,7 +62,7 @@ router.get("/product-list/:page", productListController);
 router.get("/publishable-key", (req, res) => {
   res.json({
     publishable_key:
-      "pk_test_51OKLAMSCLMZX95KzUfbfNSvZnJqaURfYWEftAbQLv5w3GA2fHBu2qWfNjOqLEag71oWJ5E3vdVwiNwforJgK3ksP00fgBpTNTY",
+      Stripe_Publish_Key ,
   });
 });
 
